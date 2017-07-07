@@ -1,0 +1,22 @@
+<ons-page ng-controller="resultsController">
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button onclick="stopAudio()">Back</ons-back-button>
+		</div>
+		<div class="center"> ScanAlert</div>
+	</ons-toolbar>
+	
+	<img style="position:absolute;left:0px;top:0px;z-index:-1;width:100%;height:250px;" ng-src="res/{{allergies.mood}}.gif" align="center">
+		<strong><p align="center" style="color:#efefef;font-size:80px; text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">{{allergies.isSafe}}</p></strong>
+				
+      <ons-list>
+        <ons-list-header><b>{{allergies.productName}}</b></ons-list-header>
+
+        <ons-list-item ng-repeat="x in allergies.allergy">
+        <div>
+        	<b>{{x.name + ": "}}</b>{{x.ingridients}}
+        </div>
+    	</ons-list-item>
+
+      </ons-list>
+</ons-page>

@@ -1,0 +1,47 @@
+angular.module("scanAlert").controller("registryController",function($scope){
+	$scope.checkAllergies = function(){
+		if($scope.cerealsChecked){
+			insertAllergy("Cereals");
+		}
+		if($scope.shellfishChecked){
+			insertAllergy("Shellfish");
+		}
+		if($scope.eggChecked){
+			insertAllergy("Egg");
+		}
+		if($scope.milkChecked){
+			insertAllergy("Milk");
+		}
+		if($scope.peanutsChecked){
+			insertAllergy("Peanuts");
+		}
+		if($scope.sulfitesChecked){
+			insertAllergy("Sulfites");
+		}
+		if($scope.treeNutsChecked){
+			insertAllergy("Tree Nuts");
+		}
+		if($scope.soybeanChecked){
+			insertAllergy("Soybean");
+		}
+		if($scope.sesameSeedsChecked){
+			insertAllergy("Sesame Seeds");
+		}
+		if($scope.glutenChecked){
+			insertAllergy("Gluten");
+		}
+		if($scope.lactoseChecked){
+			insertAllergy("Lactose");
+		}
+		if($scope.cornChecked){
+			insertAllergy("Corn");
+		}
+		if($scope.wheatChecked){
+			insertAllergy("Wheat");
+		}
+		if($scope.coconutChecked){
+			insertAllergy("Coconut");
+		}
+		myNavigator.popPage({animation:"none"});
+	}
+});

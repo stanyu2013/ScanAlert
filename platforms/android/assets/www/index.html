@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html lang="en" ng-app="scanAlert">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" href="onsen/css/app.css">-->
+        <link rel="stylesheet" href="onsen/css/onsenui.css">
+        <link rel="stylesheet" href="onsen/css/onsen-css-components.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="onsen/js/onsenui.js"></script>	
+        <script src="onsen/js/angular/angular.js"></script>
+        <script src="onsen/js/angular-onsenui.js"></script> 
+        <script type="text/javascript" src="js/index.js"></script>
+        <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+        <script type="text/javascript" src="js/database.js"></script>
+        <script type="text/javascript" src="js/userRegistry.js"></script>
+        <script type="text/javascript" src="js/allergyResults.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </head>
+    <body ng-controller="appController" style="background-color: white;">
+        <ons-navigator title="Navigator" var="myNavigator">
+        <ons-toolbar>
+            <div class="center">ScanAlert</div>
+        </ons-toolbar>
+            <div style="text-align: center">
+            <img src="res/logo.png"style="position: absolute; top: 20%; left: 7%;"ng-click="scan()"/>
+                <span style="position: absolut; top: 10%"><b>Scan Product</b></span>
+            </div>
+        </ons-navigator>
+    </body>
+</html>

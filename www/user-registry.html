@@ -1,0 +1,132 @@
+<ons-page ng-controller="registryController">
+	<ons-toolbar>
+		<div class="center">Select Your Allergies</div>
+	</ons-toolbar>
+	<ons-list>
+		<ons-list-header>Allergies</ons-list-header>
+
+		<ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="cerealsChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Cereals
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="shellfishChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Shellfish
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="eggChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Egg
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="fishChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Fish
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="milkChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Milk
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="peanutsChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Peanuts
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="sulfitesChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Sulfites
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="treeNutsChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Tree Nuts
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="soybeanChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Soybean
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="sesameSeedsChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Sesame Seeds
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="glutenChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Gluten
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="lactoseChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Lactose
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="cornChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Corn
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="wheatChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Wheat
+			</label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="checkbox">
+  			<input type="checkbox" class="checkbox__input" ng-model="coconutChecked">
+  				<div class="checkbox__checkmark"></div>
+ 				 Coconut
+			</label>
+        </ons-list-item>
+
+        <ons-list-item>
+        	<button class='button button--large' ng-click="checkAllergies();">Submit</button>
+        </ons-list-item> 
+	</ons-list>
+</ons-page>
